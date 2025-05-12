@@ -5,11 +5,13 @@
   "rewrites": [
     { "source": "/", "destination": "/index.html" }
   ],
-  "redirects": [
+  "routes": [
     {
-      "source": "/yorum",
-      "destination": "https://search.google.com/local/writereview?placeid=ChIJFTsTmf9vKhURmUKg02cbeTU",
-      "permanent": true
+      "src": "/yorum",
+      "status": 301,
+      "headers": {
+        "Location": "https://search.google.com/local/writereview?placeid=ChIJFTsTmf9vKhURmUKg02cbeTU"
+      }
     }
   ]
 }
