@@ -1,7 +1,16 @@
+<artifact type="application/vnd.ant.code" language="json" title="vercel.json">
 {
   "outputDirectory": ".",
   "cleanUrls": true,
   "rewrites": [
     { "source": "/", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/yorum",
+      "destination": "https://search.google.com/local/writereview?placeid=ChIJFTsTmf9vKhURmUKg02cbeTU",
+      "permanent": true
+    }
   ]
 }
+</artifact>
